@@ -41,7 +41,7 @@ public class UserController {
         return "redirect:/users";
     }
 
-    @GetMapping("/{id}")
+    @RequestMapping("/{id}")
     public String updateUser(@ModelAttribute("user") User user, @PathVariable("id") int id) {
         userServiceImpl.updateUser(id, user);
         return "redirect:/users";
