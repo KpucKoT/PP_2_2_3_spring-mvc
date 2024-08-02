@@ -25,7 +25,6 @@
             <td th:text="${user.getLastName()}">lastName</td>
             <td th:text="${user.getEmail()}">email</td>
             <td th:text="${user.getCar_id()}">car_id</td>
-            <td><a th:href="@{delete/{id}(id=${user.getId()})}">Delete</a></td>
         </tr>
 
     </table>
